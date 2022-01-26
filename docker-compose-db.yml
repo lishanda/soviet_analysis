@@ -1,0 +1,20 @@
+version: '3.2'
+
+services:
+
+  postgresdb:
+    image: postgres:alpine
+    container_name: postgresdb
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: changeme
+      POSTGRES_USER: elastic
+      POSTGRES_DB: sovsci
+    volumes:
+      - "./pgdata:/var/lib/postgresql/data"
+
+
+volumes:
+  elasticsearch:

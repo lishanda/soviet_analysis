@@ -1,0 +1,6 @@
+# Virtual Environment
+venv
+# IDE config
+.idea
+# Data sorce files and backups
+data
